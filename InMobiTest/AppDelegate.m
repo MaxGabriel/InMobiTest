@@ -7,6 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "IMSdk.h"
+#import "IMBanner.h"
+#import "IMCommonConstants.h"
+#import "IMInterstitial.h"
+
+@import AdSupport;
+@import AudioToolbox;
+@import AVFoundation;
+@import CoreLocation;
+@import CoreTelephony;
+@import EventKit;
+@import EventKitUI;
+@import MediaPlayer;
+@import MessageUI;
+@import Security;
+@import Social;
+@import StoreKit;
+@import SystemConfiguration;
+@import SafariServices;
 
 @interface AppDelegate ()
 
@@ -17,6 +36,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [IMSdk initWithAccountID:@"1234"];
     return YES;
 }
 

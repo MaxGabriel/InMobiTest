@@ -13,6 +13,9 @@
 		50AB1A581BD7179700F14421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AB1A561BD7179700F14421 /* Main.storyboard */; };
 		50AB1A5A1BD7179700F14421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AB1A591BD7179700F14421 /* Assets.xcassets */; };
 		50AB1A5D1BD7179700F14421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AB1A5B1BD7179700F14421 /* LaunchScreen.storyboard */; };
+		50AB1A671BD717A700F14421 /* libInMobi-5.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AB1A651BD717A700F14421 /* libInMobi-5.0.1.a */; settings = {ASSET_TAGS = (); }; };
+		50AB1A731BD717E100F14421 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AB1A721BD717E100F14421 /* libsqlite3.tbd */; };
+		50AB1A751BD718AF00F14421 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AB1A741BD718AF00F14421 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,19 @@
 		50AB1A591BD7179700F14421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50AB1A5C1BD7179700F14421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50AB1A5E1BD7179700F14421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AB1A651BD717A700F14421 /* libInMobi-5.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInMobi-5.0.1.a"; sourceTree = "<group>"; };
+		50AB1A681BD717D500F14421 /* IMBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMBanner.h; sourceTree = "<group>"; };
+		50AB1A691BD717D500F14421 /* IMBannerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMBannerDelegate.h; sourceTree = "<group>"; };
+		50AB1A6A1BD717D500F14421 /* IMCommonConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMCommonConstants.h; sourceTree = "<group>"; };
+		50AB1A6B1BD717D500F14421 /* IMCustomNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMCustomNative.h; sourceTree = "<group>"; };
+		50AB1A6C1BD717D500F14421 /* IMInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMInterstitial.h; sourceTree = "<group>"; };
+		50AB1A6D1BD717D500F14421 /* IMInterstitialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMInterstitialDelegate.h; sourceTree = "<group>"; };
+		50AB1A6E1BD717D500F14421 /* IMNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMNative.h; sourceTree = "<group>"; };
+		50AB1A6F1BD717D500F14421 /* IMNativeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMNativeDelegate.h; sourceTree = "<group>"; };
+		50AB1A701BD717D500F14421 /* IMRequestStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMRequestStatus.h; sourceTree = "<group>"; };
+		50AB1A711BD717D500F14421 /* IMSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMSdk.h; sourceTree = "<group>"; };
+		50AB1A721BD717E100F14421 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		50AB1A741BD718AF00F14421 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50AB1A751BD718AF00F14421 /* libc++.tbd in Frameworks */,
+				50AB1A731BD717E100F14421 /* libsqlite3.tbd in Frameworks */,
+				50AB1A671BD717A700F14421 /* libInMobi-5.0.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 		50AB1A411BD7179700F14421 = {
 			isa = PBXGroup;
 			children = (
+				50AB1A741BD718AF00F14421 /* libc++.tbd */,
+				50AB1A721BD717E100F14421 /* libsqlite3.tbd */,
 				50AB1A4C1BD7179700F14421 /* InMobiTest */,
 				50AB1A4B1BD7179700F14421 /* Products */,
 			);
@@ -58,6 +79,17 @@
 		50AB1A4C1BD7179700F14421 /* InMobiTest */ = {
 			isa = PBXGroup;
 			children = (
+				50AB1A681BD717D500F14421 /* IMBanner.h */,
+				50AB1A691BD717D500F14421 /* IMBannerDelegate.h */,
+				50AB1A6A1BD717D500F14421 /* IMCommonConstants.h */,
+				50AB1A6B1BD717D500F14421 /* IMCustomNative.h */,
+				50AB1A6C1BD717D500F14421 /* IMInterstitial.h */,
+				50AB1A6D1BD717D500F14421 /* IMInterstitialDelegate.h */,
+				50AB1A6E1BD717D500F14421 /* IMNative.h */,
+				50AB1A6F1BD717D500F14421 /* IMNativeDelegate.h */,
+				50AB1A701BD717D500F14421 /* IMRequestStatus.h */,
+				50AB1A711BD717D500F14421 /* IMSdk.h */,
+				50AB1A651BD717A700F14421 /* libInMobi-5.0.1.a */,
 				50AB1A501BD7179700F14421 /* AppDelegate.h */,
 				50AB1A511BD7179700F14421 /* AppDelegate.m */,
 				50AB1A531BD7179700F14421 /* ViewController.h */,
@@ -265,6 +297,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InMobiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InMobiTest",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Heyzap.InMobiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -276,6 +316,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InMobiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InMobiTest",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Heyzap.InMobiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
